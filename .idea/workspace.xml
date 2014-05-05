@@ -69,11 +69,11 @@
       <file leaf-file-name="MorseDecoder.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MorseDecoder/MorseDecoder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="84" column="36" selection-start="2419" selection-end="2419" vertical-scroll-proportion="0.19493392">
+            <state line="128" column="17" selection-start="3652" selection-end="3652" vertical-scroll-proportion="0.6629956">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1188#1196#0" expanded="true" />
-                <element signature="e#2680#2688#0" expanded="true" />
+                <element signature="e#1216#1224#0" expanded="true" />
+                <element signature="e#2708#2716#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -383,8 +383,8 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1188#1196#0" expanded="true" />
-            <element signature="e#2680#2688#0" expanded="true" />
+            <element signature="e#1216#1224#0" expanded="true" />
+            <element signature="e#2708#2716#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -419,11 +419,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MorseDecoder/MorseDecoder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="36" selection-start="2419" selection-end="2419" vertical-scroll-proportion="0.19493392">
+        <state line="128" column="17" selection-start="3652" selection-end="3652" vertical-scroll-proportion="0.6629956">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1188#1196#0" expanded="true" />
-            <element signature="e#2680#2688#0" expanded="true" />
+            <element signature="e#1216#1224#0" expanded="true" />
+            <element signature="e#2708#2716#0" expanded="true" />
           </folding>
         </state>
       </provider>

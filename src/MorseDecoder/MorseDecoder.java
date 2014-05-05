@@ -2,6 +2,7 @@ package MorseDecoder;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -115,6 +116,25 @@ public class MorseDecoder {
 			if (scanner != null) {
 				scanner.close();
 			}
+		}
+	}
+
+	/**
+	 * Writes morse code to the output file
+	 * @param encodedLines ArrayList of lines to be written
+	 * @param outputFile location of file to be written to
+	 * @throws FileNotFoundException
+	 */
+	private static void output(ArrayList<String> encodedLines, File outputFile) throws FileNotFoundException {
+		PrintWriter pw = null;
+		try{
+			pw = new PrintWriter(outputFile);
+			for (String encodedLine : encodedLines){
+				pw.println(encodedLine);
+			}
+		}
+		finally{
+			pw.close();
 		}
 	}
 
