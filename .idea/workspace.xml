@@ -5,7 +5,7 @@
     <ignored path="Morse Code Decoder.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/MorseTree.java" changelist="c0921b84-1e27-49ad-9c25-3748671078b5" time="1399251885581" ignored="false" />
-    <file path="/MorseDecoder.java" changelist="c0921b84-1e27-49ad-9c25-3748671078b5" time="1399253383041" ignored="false" />
+    <file path="/MorseDecoder.java" changelist="c0921b84-1e27-49ad-9c25-3748671078b5" time="1399253509450" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +69,7 @@
       <file leaf-file-name="MorseDecoder.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MorseDecoder/MorseDecoder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="128" column="17" selection-start="3652" selection-end="3652" vertical-scroll-proportion="0.6629956">
+            <state line="106" column="60" selection-start="3200" selection-end="3200" vertical-scroll-proportion="0.47577092">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1216#1224#0" expanded="true" />
@@ -419,7 +419,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MorseDecoder/MorseDecoder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="128" column="17" selection-start="3652" selection-end="3652" vertical-scroll-proportion="0.6629956">
+        <state line="106" column="60" selection-start="3200" selection-end="3200" vertical-scroll-proportion="0.47577092">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1216#1224#0" expanded="true" />

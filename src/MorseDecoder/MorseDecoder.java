@@ -101,7 +101,7 @@ public class MorseDecoder {
 					else{
 						String decodedCharacter = morseTree.decode(encodedCharacter);
 						if (decodedCharacter == null){
-							System.out.println("Oi!");
+							System.out.println("Warning: Skipping character "+encodedCharacter);
 						}
 						else{
 							decodedLine += decodedCharacter;
@@ -110,7 +110,7 @@ public class MorseDecoder {
 				}
 				decodedLines.add(decodedLine);
 			}
-			//output(decodedLines, outputFile);
+			output(decodedLines, outputFile);
 		}
 		finally {
 			if (scanner != null) {
