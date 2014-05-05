@@ -9,13 +9,17 @@ package MorseDecoder;
  * is traversed by going left for a dot and right for a dash.
  */
 
-public class MorseTree<E> {
+public class MorseTree<E extends Comparable<E>> {
 
 	/**
 	 * The tree's root Node
 	 */
 	private Node root;
 
+	/**
+	 * A Node in the tree
+	 * @param <E>
+	 */
 	private class Node<E>{
 
 		/**
@@ -49,6 +53,31 @@ public class MorseTree<E> {
 
 	public MorseTree(){
 		root = new Node(null, null, null);
+	}
+
+	/**
+	 * Adds a character to the tree
+	 * @param symbol character to be added
+	 * @param code morse code corresponding to the symbol
+	 */
+	public void add(String symbol, String code){
+		Node previous = root;
+		Node current = null;
+		for (int i=0; i<code.length(); i++){
+			if (code.substring(i, i+1) == "."){
+				if (previous.left == null){
+					previous.left = new Node(null, null, null);
+				}
+				current = previous.left;
+			}
+			else if (code.substring(i, i+1) == "-"){
+				if (previous.right == null){
+					previous.right = new Node(null, null, null);
+				}
+				current = previous.right;
+			}
+		}
+		current.value = symbol;
 	}
 
 }
