@@ -5,7 +5,7 @@
     <ignored path="Morse Code Decoder.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/MorseTree.java" changelist="c0921b84-1e27-49ad-9c25-3748671078b5" time="1399251885581" ignored="false" />
-    <file path="/MorseDecoder.java" changelist="c0921b84-1e27-49ad-9c25-3748671078b5" time="1399040663058" ignored="false" />
+    <file path="/MorseDecoder.java" changelist="c0921b84-1e27-49ad-9c25-3748671078b5" time="1399252512477" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,19 +66,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MorseDecoder.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="MorseDecoder.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MorseDecoder/MorseDecoder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="0" selection-start="334" selection-end="334" vertical-scroll-proportion="0.0">
+            <state line="23" column="74" selection-start="640" selection-end="640" vertical-scroll-proportion="0.41960353">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#775#783#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="morsecode.txt" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/morsecode.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="1" selection-start="1" selection-end="2" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MorseTree.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="MorseTree.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MorseDecoder/MorseTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="104" column="28" selection-start="2098" selection-end="2098" vertical-scroll-proportion="0.7867731">
+            <state line="94" column="26" selection-start="1904" selection-end="1904" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -94,15 +106,16 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/MorseDecoder/MorseDecoder.java" />
         <option value="$PROJECT_DIR$/src/MorseDecoder/MorseTree.java" />
+        <option value="$PROJECT_DIR$/src/MorseDecoder/MorseDecoder.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="960" />
-    <option name="width" value="960" />
-    <option name="height" value="1080" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1098" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -137,6 +150,16 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="Morse Code Decoder" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Morse Code Decoder" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Java-Morse-Decoder" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -258,7 +281,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="960" y="0" width="960" height="1080" extended-state="0" />
+    <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -273,7 +296,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.328125" sideWeight="0.6713062" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15688367" sideWeight="0.6713062" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32837406" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -347,7 +370,10 @@
     <entry file="file://$PROJECT_DIR$/src/MorseDecoder/MorseDecoder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#775#783#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -358,17 +384,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MorseDecoder/MorseDecoder.java">
+    <entry file="file://$PROJECT_DIR$/src/MorseDecoder/MorseTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="334" selection-end="334" vertical-scroll-proportion="0.0">
+        <state line="94" column="26" selection-start="1904" selection-end="1904" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MorseDecoder/MorseTree.java">
+    <entry file="file://$PROJECT_DIR$/morsecode.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="104" column="28" selection-start="2098" selection-end="2098" vertical-scroll-proportion="0.7867731">
+        <state line="0" column="1" selection-start="1" selection-end="2" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MorseDecoder/MorseDecoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="74" selection-start="640" selection-end="640" vertical-scroll-proportion="0.41960353">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#775#783#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
