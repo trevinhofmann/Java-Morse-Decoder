@@ -2,6 +2,7 @@ package MorseDecoder;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
@@ -16,16 +17,24 @@ import java.util.Scanner;
 public class MorseDecoder {
 
 	/**
+	 *
 	 * Main method of the program
 	 * Loads the morse tree, reads encoded input, and writes decoded output
-	 * @param args
+	 * @param args ignored
+	 * @throws FileNotFoundException
 	 */
 	public static void main(String[] args) throws FileNotFoundException{
 		MorseTree<String> morseTree = loadTree(new File("morsecode.txt"));
 		File inputFile = new File(promptFilename("Enter an input filename:", true));
 		File outputFile = new File(promptFilename("Enter an output filename:", false));
+		decode(morseTree, inputFile, outputFile);
 	}
 
+	/**
+	 * @param morse file containing morse code
+	 * @return MorseTree to be used for decoding
+	 * @throws FileNotFoundException
+	 */
 	private static MorseTree<String> loadTree(File morse) throws FileNotFoundException{
 		MorseTree<String> morseTree = new MorseTree<String>();
 		Scanner scanner = null;
@@ -66,6 +75,47 @@ public class MorseDecoder {
 			}
 		} while(!fileExists && mustExist);
 		return filename;
+	}
+
+	/**
+	 * Decodes the morse code
+	 * @param morseTree tree containing morse code
+	 * @param inputFile location of encoded file
+	 * @param outputFile location to save decoded output
+	 * @throws FileNotFoundException
+	 */
+	private static void decode(MorseTree<String> morseTree, File inputFile, File outputFile) throws FileNotFoundException{
+		Scanner scanner = null;
+		try{
+			scanner = new Scanner(inputFile);
+			String line;
+			ArrayList<String> decodedLines = new ArrayList<String>();
+			while (scanner.hasNextLine()){
+				line = scanner.nextLine().toUpperCase();
+				String decodedLine = "";
+				for (String encodedCharacter : line.split(" ")){
+					if (encodedCharacter == "|"){
+						decodedLine += " ";
+					}
+					else{
+						String decodedCharacter = morseTree.decode(encodedCharacter);
+						if (decodedCharacter == null){
+							System.out.println("Oi!");
+						}
+						else{
+							decodedLine += decodedCharacter;
+						}
+					}
+				}
+				decodedLines.add(decodedLine);
+			}
+			//output(decodedLines, outputFile);
+		}
+		finally {
+			if (scanner != null) {
+				scanner.close();
+			}
+		}
 	}
 
 }
