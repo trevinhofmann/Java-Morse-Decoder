@@ -95,10 +95,10 @@ public class MorseDecoder {
 				line = scanner.nextLine().toUpperCase();
 				String decodedLine = "";
 				for (String encodedCharacter : line.split(" ")){
-					if (encodedCharacter == "|"){
+					if (encodedCharacter.equals("|")){
 						decodedLine += " ";
 					}
-					else{
+					else if (encodedCharacter.length() > 0){
 						String decodedCharacter = morseTree.decode(encodedCharacter);
 						if (decodedCharacter == null){
 							System.out.println("Warning: Skipping character "+encodedCharacter);

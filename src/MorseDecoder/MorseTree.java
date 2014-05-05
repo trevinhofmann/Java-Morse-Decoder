@@ -63,13 +63,13 @@ public class MorseTree<E extends Comparable<E>> {
 	public void add(String symbol, String code){
 		Node current = root;
 		for (int i=0; i<code.length(); i++){
-			if (code.substring(i, i+1) == "."){
+			if (code.substring(i, i+1).equals(".")){
 				if (current.left == null){
 					current.left = new Node(null, null, null);
 				}
 				current = current.left;
 			}
-			else if (code.substring(i, i+1) == "-"){
+			else if (code.substring(i, i+1).equals("-")){
 				if (current.right == null){
 					current.right = new Node(null, null, null);
 				}
@@ -88,13 +88,13 @@ public class MorseTree<E extends Comparable<E>> {
 		Node current = root;
 		boolean exists = true;
 		for (int i=0; (i<code.length() && exists); i++){
-			if (code.substring(i, i+1) == "."){
+			if (code.substring(i, i+1).equals(".")){
 				if (current.left == null){
 					exists = false;
 				}
 				current = current.left;
 			}
-			else if (code.substring(i, i+1) == "-"){
+			else if (code.substring(i, i+1).equals("-")){
 				if (current.right == null){
 					exists = false;
 				}
