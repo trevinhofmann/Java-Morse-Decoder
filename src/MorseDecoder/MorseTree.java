@@ -79,6 +79,32 @@ public class MorseTree<E extends Comparable<E>> {
 		current.value = symbol;
 	}
 
-
+	/**
+	 * Decodes a morse code String
+	 * @param code morse code to be decoded
+	 * @return character represented by morse code
+	 */
+	public String decode(String code){
+		Node current = root;
+		boolean exists = true;
+		for (int i=0; (i<code.length() && exists); i++){
+			if (code.substring(i, i+1) == "."){
+				if (current.left == null){
+					exists = false;
+				}
+				current = current.left;
+			}
+			else if (code.substring(i, i+1) == "-"){
+				if (current.right == null){
+					exists = false;
+				}
+				current = current.right;
+			}
+		}
+		if (exists){
+			return (String) current.value;
+		}
+		return null;
+	}
 
 }
