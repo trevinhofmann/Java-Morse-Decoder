@@ -61,23 +61,24 @@ public class MorseTree<E extends Comparable<E>> {
 	 * @param code morse code corresponding to the symbol
 	 */
 	public void add(String symbol, String code){
-		Node previous = root;
-		Node current = null;
+		Node current = root;
 		for (int i=0; i<code.length(); i++){
 			if (code.substring(i, i+1) == "."){
-				if (previous.left == null){
-					previous.left = new Node(null, null, null);
+				if (current.left == null){
+					current.left = new Node(null, null, null);
 				}
-				current = previous.left;
+				current = current.left;
 			}
 			else if (code.substring(i, i+1) == "-"){
-				if (previous.right == null){
-					previous.right = new Node(null, null, null);
+				if (current.right == null){
+					current.right = new Node(null, null, null);
 				}
-				current = previous.right;
+				current = current.right;
 			}
 		}
 		current.value = symbol;
 	}
+
+
 
 }
