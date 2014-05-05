@@ -22,6 +22,8 @@ public class MorseDecoder {
 	 */
 	public static void main(String[] args) throws FileNotFoundException{
 		MorseTree<String> morseTree = loadTree(new File("morsecode.txt"));
+		File inputFile = new File(promptFilename("Enter an input filename:", true));
+		File outputFile = new File(promptFilename("Enter an output filename:", false));
 	}
 
 	private static MorseTree<String> loadTree(File morse) throws FileNotFoundException{
@@ -43,6 +45,27 @@ public class MorseDecoder {
 			}
 		}
 		return morseTree;
+	}
+
+	/**
+	 * Returns a String for a file name, collected through System.in
+	 * @param prompt String prompting the input
+	 * @param mustExist whether or not the file must exist
+	 * @return String file name
+	 */
+	private static String promptFilename(String prompt, boolean mustExist){
+		String filename = null;
+		boolean fileExists;
+		Scanner in =  new Scanner(System.in);
+		do{
+			System.out.println(prompt);
+			filename = in.next();
+			fileExists = (new File(filename)).exists();
+			if (!fileExists && mustExist){
+				System.out.println("File does not exist. Please try again.");
+			}
+		} while(!fileExists && mustExist);
+		return filename;
 	}
 
 }
